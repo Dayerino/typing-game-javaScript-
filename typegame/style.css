@@ -1,0 +1,123 @@
+#screen{
+    box-sizing: border-box;
+    border: solid black 2px ;
+    height: 550px;
+    width: 55%;
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+    position: relative;
+}
+#btn{
+    margin: 0 auto;
+    display: block;
+    padding: 20px 50px 40px 50px;
+    margin-top: 15px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+}
+#stopBtn{
+    margin: 0 auto;
+    display: block;
+    padding: 20px 50px 40px 50px;
+    margin-top: 15px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+}
+h1{
+    color: white;
+    position:absolute;
+    display: inline-block;
+    left:95%;
+    top: 75%;
+}
+h2{
+    color: white;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+    left: 43%;
+}
+#highscore{
+    color: white;
+    position:absolute;
+    display: inline-block;
+    left:95%;
+    top: 68%;
+}
+p{
+    color: white;
+    font-size: 25px;
+    position:absolute;
+    display: inline-block;
+    left:84%;
+    top: 68%;
+}
+input{
+    color: white;
+    background-color: red;
+    border: solid white 3px;
+    width: 90px;
+    height: 25px;
+    position: absolute;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 auto;
+    left: 46%;
+    top: 90%;
+}
+/* animation stuff */
+.falling{
+    animation-name: falling;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes falling{
+    from{
+       transform: translateY(0) ;
+    }
+    to{
+       transform: translateY(450px);
+    }
+}
+.animate{
+    animation-duration: 5s;
+}
+.animate--fast{
+    animation-duration: 3s;
+}
+.animate--veryFast{
+    animation-duration: 2s;
+}
+.animate--slow{
+    animation-duration: 7s;
+}
+.animate--verySlow{
+    animation-duration: 10;
+}
+.falling2{
+    animation-name: falling2;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes falling2{
+    from{
+       transform: translateY(0) ;
+    }
+    to{
+       transform: translateY(450px);
+    }
+}
